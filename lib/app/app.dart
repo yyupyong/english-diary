@@ -1,4 +1,4 @@
-import 'package:english_diary/view/home/home_screen.dart';
+import 'package:english_diary/view/page/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
