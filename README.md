@@ -3,7 +3,7 @@
 Flutter Version Flutter 3.10.1 channel stable
 dart 3.0.1
 
-バージョン管理は fvm を使用しています。
+バージョン管理は fvm を使用
 
 ## Getting Started
 
