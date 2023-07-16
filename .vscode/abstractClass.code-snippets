@@ -1,7 +1,7 @@
 {
     "My Flutter Widget": {
         "body": [
-            "import 'package:paddy_flutter/exporter/ui_exporter.dart';",
+            "import 'package:english_diary/exporter/ui_exporter.dart';",
             "",
             "class ${1:MyWidget} extends AbstractStatelessWidget {",
             "\tconst ${1:MyWidget}({super.key});",
