@@ -1,0 +1,21 @@
+{
+    "My Flutter Widget": {
+        "body": [
+            "import 'package:paddy_flutter/exporter/ui_exporter.dart';",
+            "",
+            "class ${1:MyWidget} extends AbstractStatelessWidget {",
+            "\tconst ${1:MyWidget}({super.key});",
+            "",
+            "\t@override",
+            "\tWidget build(BuildContext context, WidgetRef ref) {",
+            "\t\treturn const Placeholder();",
+            "\t}",
+            "}"
+        ],
+        "prefix": [
+            "abst",
+            "abs",
+        ],
+        "description": "Create a new MyWidget"
+    }
+}
