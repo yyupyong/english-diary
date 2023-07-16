@@ -1,3 +1,4 @@
+import 'package:english_diary/app/app.dart';
 import 'package:english_diary/exporter/ui_exporter.dart';
 import 'package:english_diary/view/page/account/account_page.dart';
 import 'package:english_diary/view/page/home/home_screen.dart';
@@ -23,7 +24,6 @@ class BottomNavigationPage extends AbstractStatelessWidget {
         },
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "HOME"),
-          BottomNavigationBarItem(icon: Icon(Icons.add), label: "日記"),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_circle), label: "アカウント"),
         ],

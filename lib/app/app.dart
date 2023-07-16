@@ -1,3 +1,4 @@
+import 'package:english_diary/view/page/bottom_navigation_page.dart';
 import 'package:english_diary/view/page/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
         useMaterial3: true,
       ),
       //TODO:go_routerで実装
-      home: const HomeScreen(),
+      home: const BottomNavigationPage(),
     );
   }
 }
