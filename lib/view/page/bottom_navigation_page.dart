@@ -9,11 +9,25 @@ class BottomNavigationPage extends AbstractStatelessWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final selectIndex = useState(0);
+    final selectedIndex = useState(0);
     final pages = [
       const HomeScreen(),
       const AccountPage(),
     ];
-    return Scaffold();
+    return Scaffold(
+      body: pages[selectedIndex.value],
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: selectedIndex.value,
+        onTap: (int selectIndex) {
+          selectedIndex.value = selectIndex;
+        },
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "HOME"),
+          BottomNavigationBarItem(icon: Icon(Icons.add), label: "日記"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle), label: "アカウント"),
+        ],
+      ),
+    );
   }
 }
