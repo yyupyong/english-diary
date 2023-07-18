@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:english_diary/exporter/ui_exporter.dart';
 
 class HomeScreen extends AbstractStatelessWidget {
@@ -9,10 +8,13 @@ class HomeScreen extends AbstractStatelessWidget {
     final tabController = useTabController(initialLength: 2);
 
     return Scaffold(
-      drawer: Drawer(),
+      drawer: const Drawer(),
       appBar: AppBar(
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
+        ],
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(50),
+          preferredSize: const Size.fromHeight(50),
           child: TabBar(
             controller: tabController,
             tabs: const [
