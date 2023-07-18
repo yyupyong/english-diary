@@ -17,6 +17,7 @@ class HomeScreen extends AbstractStatelessWidget {
             controller: tabController,
             tabs: const [
               Tab(child: Text("おすすめ")),
+              //ここにおすすめのスレッドとフォロワーのスレッドが表示される
               Tab(child: Text("フォロー中")),
             ],
           ),
