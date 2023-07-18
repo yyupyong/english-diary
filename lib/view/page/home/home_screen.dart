@@ -9,8 +9,8 @@ class HomeScreen extends AbstractStatelessWidget {
     final tabController = useTabController(initialLength: 2);
 
     return Scaffold(
+      drawer: Drawer(),
       appBar: AppBar(
-        leading: Icon(Icons.dangerous),
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(50),
           child: TabBar(
