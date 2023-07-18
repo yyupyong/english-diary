@@ -19,6 +19,18 @@ class BottomNavigationPage extends AbstractStatelessWidget {
     ];
 
     return Scaffold(
+      appBar: AppBar(
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(50),
+          child: TabBar(
+            controller: tabController,
+            tabs: const [
+              Tab(child: Text("おすすめ")),
+              Tab(child: Text("フォロー中")),
+            ],
+          ),
+        ),
+      ),
       body: pages[selectedIndex.value],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex.value,
