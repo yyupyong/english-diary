@@ -11,27 +11,12 @@ class BottomNavigationPage extends AbstractStatelessWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final selectedIndex = useState(0);
-    final tabController = useTabController(initialLength: 2);
 
     final pages = [
       const HomeScreen(),
       const AccountPage(),
     ];
-
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(Icons.dangerous),
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(50),
-          child: TabBar(
-            controller: tabController,
-            tabs: const [
-              Tab(child: Text("おすすめ")),
-              Tab(child: Text("フォロー中")),
-            ],
-          ),
-        ),
-      ),
       body: pages[selectedIndex.value],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex.value,
