@@ -15,7 +15,6 @@ class BottomNavigationPage extends AbstractStatelessWidget {
 
     final pages = [
       const HomeScreen(),
-      const SerchPage(),
       const AccountPage(),
     ];
     return Scaffold(
@@ -27,7 +26,6 @@ class BottomNavigationPage extends AbstractStatelessWidget {
         },
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "ホーム"),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: "検索"),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_circle), label: "マイページ"),
         ],
