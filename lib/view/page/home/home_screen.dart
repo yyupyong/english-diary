@@ -1,4 +1,5 @@
 import 'package:english_diary/exporter/ui_exporter.dart';
+import 'package:english_diary/view/widget/diary_tile.dart';
 
 class HomeScreen extends AbstractStatelessWidget {
   const HomeScreen({super.key});
@@ -25,6 +26,12 @@ class HomeScreen extends AbstractStatelessWidget {
           ),
         ),
       ),
+      body: Container(
+          child: ListView.builder(
+              itemCount: 10,
+              itemBuilder: (context, int) {
+                return DiaryTile();
+              })),
     );
   }
 }
