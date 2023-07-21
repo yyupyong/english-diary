@@ -1,5 +1,5 @@
 import 'package:english_diary/exporter/ui_exporter.dart';
-import 'package:english_diary/view/widget/home/diary_tile.dart';
+import 'package:english_diary/view/widget/home/diary_thread.dart';
 
 class HomeScreen extends AbstractStatelessWidget {
   const HomeScreen({super.key});
@@ -30,7 +30,7 @@ class HomeScreen extends AbstractStatelessWidget {
         child: ListView.builder(
             itemCount: 10,
             itemBuilder: (context, int) {
-              return DiaryTile();
+              return DiaryThread();
             }),
       ),
     );
