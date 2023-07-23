@@ -9,7 +9,7 @@ class DiaryThread extends AbstractStatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Padding(
-          padding: const EdgeInsets.only(top: 16, left: 20, right: 20),
+          padding: const EdgeInsets.only(top: 12, left: 20, right: 20),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
