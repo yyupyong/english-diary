@@ -29,8 +29,8 @@ class HomeScreen extends AbstractStatelessWidget {
       body: SafeArea(
         child: ListView.builder(
             itemCount: 10,
-            itemBuilder: (context, int) {
-              return DiaryThread();
+            itemBuilder: (context, index) {
+              return const DiaryThread();
             }),
       ),
     );

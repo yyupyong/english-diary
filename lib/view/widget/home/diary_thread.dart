@@ -9,7 +9,7 @@ class DiaryThread extends AbstractStatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 16, left: 20, right: 20),
+          padding: const EdgeInsets.only(top: 16, left: 20, right: 20),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -17,7 +17,7 @@ class DiaryThread extends AbstractStatelessWidget {
                   width: 40,
                   height: 40,
                   child: Image.asset('assets/image/pngwing.com.png')),
-              SizedBox(
+              const SizedBox(
                 width: 8,
               ),
               const Flexible(
