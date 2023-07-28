@@ -4,6 +4,8 @@ import 'package:english_diary/view/widget/home/diary_thread.dart';
 class HomeScreen extends AbstractStatelessWidget {
   const HomeScreen({super.key});
 
+  static const routePath = '/home';
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final tabController = useTabController(initialLength: 2);
