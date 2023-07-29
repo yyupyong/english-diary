@@ -5,8 +5,6 @@ import 'package:english_diary/view/page/home/home_screen.dart';
 class BottomNavigationPage extends AbstractStatelessWidget {
   const BottomNavigationPage({super.key});
 
-  static const routePath = '/home';
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final selectedIndex = useState(0);
@@ -17,6 +15,8 @@ class BottomNavigationPage extends AbstractStatelessWidget {
     ];
     return Scaffold(
       body: pages[selectedIndex.value],
+      floatingActionButton:
+          FloatingActionButton(child: Icon(Icons.add), onPressed: () {}),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex.value,
         onTap: (int selectIndex) {
