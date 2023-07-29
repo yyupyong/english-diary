@@ -15,8 +15,6 @@ class BottomNavigationPage extends AbstractStatelessWidget {
     ];
     return Scaffold(
       body: pages[selectedIndex.value],
-      floatingActionButton:
-          FloatingActionButton(child: Icon(Icons.add), onPressed: () {}),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex.value,
         onTap: (int selectIndex) {
