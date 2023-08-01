@@ -11,6 +11,7 @@ class HomeScreen extends AbstractStatelessWidget {
     return Scaffold(
       drawer: const Drawer(),
       appBar: AppBar(
+        title: Text('english-diary'),
         actions: [
           IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
         ],
@@ -18,7 +19,6 @@ class HomeScreen extends AbstractStatelessWidget {
           controller: tabController,
           tabs: const [
             Tab(child: Text("おすすめ")),
-            //ここにおすすめのスレッドとフォロワーのスレッドが表示される
             Tab(child: Text("フォロー中")),
           ],
         ),
