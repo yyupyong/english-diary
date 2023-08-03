@@ -8,7 +8,11 @@ class SignInPage extends AbstractStatelessWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(''),
+        bottom: PreferredSize(
+            preferredSize: Size.fromHeight(1), child: Divider(height: 1)),
+      ),
     );
   }
 }
