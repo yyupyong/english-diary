@@ -1,3 +1,4 @@
+import 'package:english_diary/app/router.dart';
 import 'package:english_diary/view/page/bottom_navigation_page.dart';
 import 'package:flutter/material.dart';
 
@@ -6,14 +7,13 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      //TODO:go_routerで実装
-      home: const BottomNavigationPage(),
+      routerConfig: router,
     );
   }
 }
